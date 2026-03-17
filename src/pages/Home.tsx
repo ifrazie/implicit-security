@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Cpu, Network, Lock, Eye, Zap, ChevronRight, Terminal, Activity } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -32,12 +33,12 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-wrap items-center gap-4 mt-4">
-            <button className="px-8 py-4 bg-brand-accent text-black font-semibold rounded-sm hover:bg-opacity-90 transition-all flex items-center gap-2">
-              Start Free Trial <ChevronRight className="w-5 h-5" />
-            </button>
-            <button className="px-8 py-4 bg-transparent border border-brand-border text-white font-semibold rounded-sm hover:bg-white/5 transition-all">
+            <Link to="/contact" className="px-8 py-4 bg-brand-accent text-black font-semibold rounded-sm hover:bg-opacity-90 transition-all flex items-center gap-2">
+              Request Demo <ChevronRight className="w-5 h-5" />
+            </Link>
+            <Link to="/architecture" className="px-8 py-4 bg-transparent border border-brand-border text-white font-semibold rounded-sm hover:bg-white/5 transition-all">
               View Architecture
-            </button>
+            </Link>
           </div>
         </motion.div>
 

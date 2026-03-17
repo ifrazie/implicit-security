@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ShieldCheck, ChevronRight, Menu, X } from 'lucide-react';
+import { ShieldCheck, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
@@ -31,12 +31,7 @@ export const Navbar = () => {
           <Link to="/contact" className="hover:text-white transition-colors">Contact</Link>
         </div>
 
-        <div className="hidden md:flex items-center gap-4">
-          <button className="text-sm font-medium text-gray-300 hover:text-white transition-colors">Sign In</button>
-          <button className="px-5 py-2.5 bg-white text-black text-sm font-semibold rounded-sm hover:bg-gray-200 transition-colors flex items-center gap-2">
-            Request Demo <ChevronRight className="w-4 h-4" />
-          </button>
-        </div>
+
 
         <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X /> : <Menu />}
@@ -50,11 +45,7 @@ export const Navbar = () => {
           <Link to="/services" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>Solutions</Link>
           <Link to="/about" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>Company</Link>
           <Link to="/contact" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>Contact</Link>
-          <hr className="border-brand-border my-2" />
-          <button className="text-left text-gray-300 hover:text-white">Sign In</button>
-          <button className="px-5 py-2.5 bg-brand-accent text-black text-sm font-semibold rounded-sm hover:bg-opacity-90 transition-colors w-full text-center">
-            Request Demo
-          </button>
+
         </div>
       )}
     </nav>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { 
   ShieldAlert, 
   CloudCog, 
@@ -146,10 +147,10 @@ const ServiceList = () => {
                     </li>
                   ))}
                 </ul>
-                <button className="text-brand-accent font-semibold hover:text-white transition-colors flex items-center gap-2 group">
+                <Link to="/architecture" className="text-brand-accent font-semibold hover:text-white transition-colors flex items-center gap-2 group">
                   Explore Technical Specs 
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </Link>
               </div>
               
               <div className="w-full md:w-1/2">
@@ -194,9 +195,9 @@ const ServicesCTA = () => {
         <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
           Our engineering team works directly with enterprise clients to integrate Implicit Security into complex, bespoke environments.
         </p>
-        <button className="px-8 py-4 bg-brand-accent text-black font-semibold rounded-sm hover:bg-opacity-90 transition-all">
+        <Link to="/contact" className="px-8 py-4 bg-brand-accent text-black font-semibold rounded-sm hover:bg-opacity-90 transition-all">
           Contact Solutions Engineering
-        </button>
+        </Link>
       </div>
     </section>
   );
