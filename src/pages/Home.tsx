@@ -34,7 +34,7 @@ const Hero = () => {
           
           <div className="flex flex-wrap items-center gap-4 mt-4">
             <Link to="/contact" className="px-8 py-4 bg-brand-accent text-black font-semibold rounded-sm hover:bg-opacity-90 transition-all flex items-center gap-2">
-              Request Demo <ChevronRight className="w-5 h-5" />
+              Request Info <ChevronRight className="w-5 h-5" />
             </Link>
             <Link to="/architecture" className="px-8 py-4 bg-transparent border border-brand-border text-white font-semibold rounded-sm hover:bg-white/5 transition-all">
               View Architecture
@@ -224,12 +224,12 @@ const CTA = () => {
           Join Fortune 500 companies who trust Implicit Security to protect their most critical digital assets.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="w-full sm:w-auto px-8 py-4 bg-white text-black font-semibold rounded-sm hover:bg-gray-200 transition-all">
+          <a href="mailto:demo@implicitsecurity.com" className="w-full sm:w-auto px-8 py-4 bg-white text-black font-semibold rounded-sm hover:bg-gray-200 transition-all text-center">
             Request a Demo
-          </button>
-          <button className="w-full sm:w-auto px-8 py-4 bg-transparent border border-brand-border text-white font-semibold rounded-sm hover:bg-white/5 transition-all">
+          </a>
+          <a href="mailto:sales@implicitsecurity.com" className="w-full sm:w-auto px-8 py-4 bg-transparent border border-brand-border text-white font-semibold rounded-sm hover:bg-white/5 transition-all text-center">
             Contact Sales
-          </button>
+          </a>
         </div>
       </div>
     </section>

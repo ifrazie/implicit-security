@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer className="border-t border-brand-border bg-brand-dark pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           <div className="col-span-2">
             <div className="flex items-center gap-2 mb-6">
               <div className="w-6 h-6 rounded bg-brand-accent flex items-center justify-center">
@@ -38,16 +38,6 @@ export const Footer = () => {
               <li><Link to="/contact" className="hover:text-brand-accent transition-colors">Contact</Link></li>
             </ul>
           </div>
-          
-          <div>
-            <h4 className="text-white font-semibold mb-4">Legal</h4>
-            <ul className="space-y-3 text-sm text-gray-500">
-              <li><Link to="#" className="hover:text-brand-accent transition-colors">Privacy Policy</Link></li>
-              <li><Link to="#" className="hover:text-brand-accent transition-colors">Terms of Service</Link></li>
-              <li><Link to="#" className="hover:text-brand-accent transition-colors">Security</Link></li>
-              <li><Link to="#" className="hover:text-brand-accent transition-colors">Compliance</Link></li>
-            </ul>
-          </div>
         </div>
         
         <div className="border-t border-brand-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
@@ -55,12 +45,12 @@ export const Footer = () => {
             © {new Date().getFullYear()} Implicit Security Inc. All rights reserved.
           </p>
           <div className="flex gap-4">
-            <div className="w-8 h-8 rounded-full bg-brand-surface border border-brand-border flex items-center justify-center text-gray-500 hover:text-white cursor-pointer transition-colors">
+            <a href="https://x.com/ImplicitSec" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-brand-surface border border-brand-border flex items-center justify-center text-gray-500 hover:text-white cursor-pointer transition-colors">
               <span className="text-xs font-mono">X</span>
-            </div>
-            <div className="w-8 h-8 rounded-full bg-brand-surface border border-brand-border flex items-center justify-center text-gray-500 hover:text-white cursor-pointer transition-colors">
+            </a>
+            <a href="https://www.linkedin.com/company/nekurasystems" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-brand-surface border border-brand-border flex items-center justify-center text-gray-500 hover:text-white cursor-pointer transition-colors">
               <span className="text-xs font-mono">in</span>
-            </div>
+            </a>
           </div>
         </div>
       </div>

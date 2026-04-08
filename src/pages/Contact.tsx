@@ -174,7 +174,7 @@ export const Contact = () => {
                   <div>
                     <h4 className="text-white font-medium mb-1">Email Us</h4>
                     <p className="text-gray-400 text-sm mb-1">For general inquiries and support.</p>
-                    <a href="mailto:hello@implicitsecurity.com" className="text-brand-accent hover:underline">hello@implicitsecurity.com</a>
+                    <a href="mailto:info@implicitsecurity.com" className="text-brand-accent hover:underline">info@implicitsecurity.com</a>
                   </div>
                 </div>
 
@@ -184,8 +184,8 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-medium mb-1">Call Us</h4>
-                    <p className="text-gray-400 text-sm mb-1">Mon-Fri from 8am to 6pm PST.</p>
-                    <a href="tel:+18005550199" className="text-brand-accent hover:underline">+1 (800) 555-0199</a>
+                    <p className="text-gray-400 text-sm mb-1">Mon-Fri from 8am to 6pm EST.</p>
+                    <a href="tel:+18886943007" className="text-brand-accent hover:underline">+1 (888) 694-3007</a>
                   </div>
                 </div>
 
@@ -196,9 +196,9 @@ export const Contact = () => {
                   <div>
                     <h4 className="text-white font-medium mb-1">Headquarters</h4>
                     <p className="text-gray-400 text-sm leading-relaxed">
-                      100 Security Plaza<br />
-                      Suite 400<br />
-                      San Francisco, CA 94105
+                      6421 N Florida Ave<br />
+                      Suite 763<br />
+                      Tampa, FL 33604
                     </p>
                   </div>
                 </div>

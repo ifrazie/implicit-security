@@ -90,19 +90,19 @@ const Team = () => {
     {
       name: "Dr. Elena Rostova",
       role: "Chief Executive Officer",
-      bio: "Former Director of AI Research at DARPA. Pioneer in autonomous cyber defense systems.",
+      bio: "Pioneer in autonomous cyber defense systems.",
       image: "https://picsum.photos/seed/elena/400/400?grayscale"
     },
     {
       name: "Marcus Chen",
       role: "Chief Technology Officer",
-      bio: "Creator of the open-source neural threat framework. 15+ years in offensive security.",
+      bio: "Creator of an open-source neural threat framework. 15+ years in offensive security.",
       image: "https://picsum.photos/seed/marcus/400/400?grayscale"
     },
     {
       name: "Sarah Jenkins",
       role: "VP of Threat Intelligence",
-      bio: "Ex-NSA cryptanalyst. Specializes in state-sponsored APT tracking and mitigation.",
+      bio: "Former cryptanalyst. Specializes in state-sponsored APT tracking and mitigation.",
       image: "https://picsum.photos/seed/sarah/400/400?grayscale"
     },
     {
@@ -199,11 +199,7 @@ const Testimonials = () => {
                 "{testimonial.quote}"
               </p>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-brand-surface border border-brand-border overflow-hidden">
-                  <img src={`https://picsum.photos/seed/${testimonial.author.replace(' ', '')}/100/100?grayscale`} alt={testimonial.author} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
-                </div>
                 <div>
-                  <h4 className="text-white font-semibold">{testimonial.author}</h4>
                   <p className="text-brand-accent font-mono text-xs">{testimonial.title}</p>
                   <p className="text-gray-500 text-xs">{testimonial.company}</p>
                 </div>
