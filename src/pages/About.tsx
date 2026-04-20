@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Target, Users, Shield, Zap, ChevronDown, Quote, Lock, FileCheck, Database, ExternalLink } from 'lucide-react';
+import { Target, Users, Shield, Zap, ChevronDown, Quote, Lock, FileCheck, Database, ExternalLink, Mail, Phone, MapPin } from 'lucide-react';
 
 const AboutHero = () => {
   return (
@@ -340,6 +340,67 @@ const FAQ = () => {
   );
 };
 
+const ContactInfo = () => {
+  return (
+    <section className="py-24 relative border-t border-brand-border">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight">Contact Information</h2>
+        </div>
+        <div className="grid md:grid-cols-3 gap-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="glass-panel p-8 rounded-xl border border-brand-border"
+          >
+            <div className="w-12 h-12 rounded-lg bg-brand-surface border border-brand-border flex items-center justify-center mb-6">
+              <Mail className="w-5 h-5 text-brand-accent" />
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Email Us</h3>
+            <p className="text-gray-400 text-sm mb-3">For general inquiries and support.</p>
+            <a href="mailto:info@implicitsecurity.com" className="text-brand-accent hover:underline">info@implicitsecurity.com</a>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="glass-panel p-8 rounded-xl border border-brand-border"
+          >
+            <div className="w-12 h-12 rounded-lg bg-brand-surface border border-brand-border flex items-center justify-center mb-6">
+              <Phone className="w-5 h-5 text-brand-accent" />
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Call Us</h3>
+            <p className="text-gray-400 text-sm mb-3">Mon-Fri from 8am to 6pm EST.</p>
+            <a href="tel:+18886943007" className="text-brand-accent hover:underline">+1 (888) 694-3007</a>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="glass-panel p-8 rounded-xl border border-brand-border"
+          >
+            <div className="w-12 h-12 rounded-lg bg-brand-surface border border-brand-border flex items-center justify-center mb-6">
+              <MapPin className="w-5 h-5 text-brand-accent" />
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Headquarters</h3>
+            <p className="text-gray-400 text-sm leading-relaxed">
+              6421 N Florida Ave<br />
+              Suite 763<br />
+              Tampa, FL 33604
+            </p>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export const About = () => {
   return (
     <main>
@@ -349,6 +410,7 @@ export const About = () => {
       <Testimonials />
       <TrustCenter />
       <FAQ />
+      <ContactInfo />
     </main>
   );
 };

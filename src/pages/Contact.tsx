@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Mail, MapPin, Phone, Send, CheckCircle } from 'lucide-react';
+import { Send, CheckCircle } from 'lucide-react';
 import { generateClient } from 'aws-amplify/data';
 import type { Schema } from '../../amplify/data/resource';
 
@@ -58,11 +58,11 @@ export const Contact = () => {
           </motion.div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-24">
+        <div className="max-w-3xl mx-auto">
           {/* Contact Form */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="glass-panel p-8 rounded-2xl border border-brand-border"
           >
@@ -155,57 +155,6 @@ export const Contact = () => {
                 </button>
               </form>
             )}
-          </motion.div>
-
-          {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col justify-center space-y-12"
-          >
-            <div>
-              <h3 className="text-2xl font-semibold mb-8">Contact Information</h3>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-brand-surface border border-brand-border flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-5 h-5 text-brand-accent" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-medium mb-1">Email Us</h4>
-                    <p className="text-gray-400 text-sm mb-1">For general inquiries and support.</p>
-                    <a href="mailto:info@implicitsecurity.com" className="text-brand-accent hover:underline">info@implicitsecurity.com</a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-brand-surface border border-brand-border flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-5 h-5 text-brand-accent" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-medium mb-1">Call Us</h4>
-                    <p className="text-gray-400 text-sm mb-1">Mon-Fri from 8am to 6pm EST.</p>
-                    <a href="tel:+18886943007" className="text-brand-accent hover:underline">+1 (888) 694-3007</a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-brand-surface border border-brand-border flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-5 h-5 text-brand-accent" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-medium mb-1">Headquarters</h4>
-                    <p className="text-gray-400 text-sm leading-relaxed">
-                      6421 N Florida Ave<br />
-                      Suite 763<br />
-                      Tampa, FL 33604
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
           </motion.div>
         </div>
       </div>
