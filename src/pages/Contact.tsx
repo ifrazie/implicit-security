@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Mail, MapPin, Phone, Send, ShieldCheck, CheckCircle } from 'lucide-react';
+import { Mail, MapPin, Phone, Send, CheckCircle } from 'lucide-react';
 import { generateClient } from 'aws-amplify/data';
 import type { Schema } from '../../amplify/data/resource';
 
@@ -205,18 +205,7 @@ export const Contact = () => {
               </div>
             </div>
 
-            <div className="glass-panel p-6 rounded-xl border border-brand-border">
-              <div className="flex items-center gap-3 mb-2">
-                <ShieldCheck className="w-5 h-5 text-brand-accent" />
-                <h4 className="text-white font-medium">24/7 Incident Response</h4>
-              </div>
-              <p className="text-gray-400 text-sm mb-4">
-                Are you currently experiencing a cyber attack or breach? Our rapid response team is available 24/7.
-              </p>
-              <button className="px-4 py-2 bg-red-500/10 text-red-400 border border-red-500/20 rounded hover:bg-red-500/20 transition-colors text-sm font-medium w-full">
-                Report an Incident
-              </button>
-            </div>
+
           </motion.div>
         </div>
       </div>
